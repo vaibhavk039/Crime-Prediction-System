@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>CPA Tool</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.min.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/aos.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/owl.theme.default.min.css')}}">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="{{url_for('static',filename='css/templatemo-digital-trend.css')}}">
+
+</head>
+<body>
+
+     <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+              <i class="fa fa-line-chart"></i>
+              Crime Prediction and Analysis
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a href="register" class="nav-link register">Register crime</a>
+                  </li>
+                    <li class="nav-item">
+                        <a href="#footerforall" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="predict" class="nav-link contact">Predict Crime</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- CONTACT -->
+     <section class="contact section-padding">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-6 mx-auto col-md-7 col-12 py-5 mt-5 text-center" data-aos="fade-up">
+
+                      <h1 class="mb-4">Enter your <strong> <br> city/district, digital time(hours)<br></strong> and Predict!</h1>
+                    </div>
+
+                    <div class="col-lg-8 mx-auto col-md-10 col-12">
+                    
+                    <!-- Follow https://templatemo.com/contact page to setup your own contact form -->
+                    
+                      <form action="{{url_for('predict')}}" method="post" class="contact-form" data-aos="fade-up" data-aos-delay="300" role="form">
+                        <div class="row">
+                          <div class="col-lg-6 col-12">
+                            <input type="text" class="form-control" name="name" placeholder="Location"
+                            required="required">
+                          </div>
+
+                          <div class="col-lg-6 col-12">
+                            <input type="datetime-local" for='time-stamp' class="form-control" name="time" placeholder="Time (in hrs)"required="required">
+                          </div>
+
+                          <div class="col-lg-5 mx-auto col-7">
+                            <button type="submit" class="form-control" id="submit-button" name="submit">Predict Crime</button>
+                          </div>
+                        </div>
+
+                      </form>
+                      <br>
+                      <div style="text-align: center; color: red; font-size: 40px;">
+                        {{ pt }}
+                      </div>
+                      <br>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- SCRIPTS -->
+     <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+     <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+     <script src="{{url_for('static',filename='js/aos.js')}}"></script>
+     <script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+     <script src="{{url_for('static',filename='js/smoothscroll.js')}}"></script>
+     <script src="{{url_for('static',filename='js/custom.js')}}"></script>
+
+</body>
+</html>

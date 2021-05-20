@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>CPA Tool</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.min.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/aos.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/owl.theme.default.min.css')}}">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="{{url_for('static',filename='css/templatemo-digital-trend.css')}}">
+
+</head>
+<body>
+
+     <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+              <i class="fa fa-line-chart"></i>
+              Crime Prediction and Analysis
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li  class="nav-item">
+                         <a href="team"  class="nav-link">Team</a>
+                     </li>
+
+                    <li class="nav-item">
+                        <a href="#footerforall" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="predict" class="nav-link contact">Predict Crime</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="project section-padding" id="project">
+        <div class="container-fluid">
+             <div class="row">
+
+                  <div class="col-lg-12 col-12">
+
+                      <h2 class="mb-5 text-center" data-aos="fade-up">
+                          
+                          <strong>Meet Our Creators</strong>
+                      </h2>
+
+                       <div class="owl-carousel owl-theme" id="project-slide">
+                            <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
+                                 <img src="{{url_for('static',filename='images/project/pic1.png')}}" class="img-fluid" alt="project image">
+
+
+
+
+
+
+
+                             <div class="project-info">
+                                      
+
+                                      <h3>
+                                           <a href="city_plot.html">
+                                                <span>Vaibhav Kaushik</span>
+                                                <a  id="r1" href="#" class="fa fa-twitter"></a>
+                                           </a>
+                                      </h3>
+                                 </div>
+                            </div>
+
+                            <div class="item project-wrapper" data-aos="fade-up">
+                                 <img src="{{url_for('static',filename='images/project/pic4.png')}}" class="img-fluid" alt="project image">
+
+                                 <div class="project-info">
+                                    
+
+                                      <h3>
+                                           <a href="year_wise.html">
+                                                <span>Kritika Berry</span>
+                                                <a id="r1" href="#" class="fa fa-twitter"></a>
+                                           </a>
+                                      </h3>
+                                 </div>
+                            </div>
+
+                            <div class="item project-wrapper" data-aos="fade-up">
+                                 <img src="{{url_for('static',filename='images/project/pic3.png')}}" class="img-fluid" alt="project image">
+
+                                 <div class="project-info">
+                                    
+
+                                      <h3>
+                                           <a href="month_wise.html">
+                                                <span>Mahima Yadav</span>
+                                                <a id="r1" href="#" class="fa fa-twitter"></a>
+                                           </a>
+                                      </h3>
+                                 </div>
+                            </div>
+
+                            
+
+
+                  </div>
+
+             </div>
+        </div>
+   </section>
+ <footer class="site-footer" id="footerforall">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+            <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">Created as the minor project in SMIT</h1>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <h4 class="my-4">Contact Info</h4>
+            <p>
+              <a href="#">
+                <i class="fa fa-envelope mr-2 footer-icon"></i>
+                crimecase@gmail.com
+              </a>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <h4 class="my-4">Survey Report</h4>
+
+            <p class="mb-1">
+              <i class="fa fa-home mr-2 footer-icon"></i> 
+              Click here
+            </p>
+          </div>
+
+          <div class="col-lg-4 mx-lg-auto text-center col-md-8 col-12" data-aos="fade-up" data-aos-delay="400">
+            <p class="copyright-text">Developed by Vaibhav, Mahima and Kritika!</p>
+            <br>
+            </div>
+
+          <div class="col-lg-3 mx-lg-auto col-md-6 col-12">
+            <ul class="social-icon">
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-dribbble"></a></li>
+              <li><a href="#" class="fa fa-behance"></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+     <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+     <script src="{{url_for('static',filename='js/aos.js')}}"></script>
+     <script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+     <script src="{{url_for('static',filename='js/smoothscroll.js')}}"></script>
+     <script src="{{url_for('static',filename='js/custom.js')}}"></script>
+
+
+</body>
+</html>
+
+   

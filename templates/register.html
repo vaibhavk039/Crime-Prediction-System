@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>CPA Tool</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.min.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/aos.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/owl.theme.default.min.css')}}">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="{{url_for('static',filename='css/templatemo-digital-trend.css')}}">
+
+</head>
+<body>
+
+     <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+              <i class="fa fa-line-chart"></i>
+              Crime Prediction and Analysis
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a href="register" class="nav-link register">Register crime</a>
+                  </li>
+                    <li class="nav-item">
+                        <a href="#footerforall" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="predict" class="nav-link contact">Predict Crime</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    {{ message }}
+
+    <div class="contact-clean">
+        <form action="{{url_for('register')}}" style="background-color: rgb(243, 217, 222);" method="POST">
+            <h2 class="text-center">Register Crime</h2>
+            <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
+           
+            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+           
+            <div class="form-group"><input class="form-control" type="text" name="city" placeholder="City"></div>
+            <div class="form-group"><input class="form-control" type="text" name="state" placeholder="State"></div>
+            <div class="form-group"><input class="form-control" type="text" name="crime" placeholder="Type of Crime"></div>
+            <div class="form-group">
+                <label for="time-stamp"> Timestamp</label><br>
+                <input type="datetime-local" id="time" name="time">
+            </div>
+            
+            
+
+            <div class="form-group"><textarea class="form-control" rows="14" name="message" placeholder="Message"></textarea></div>
+            <div class="form-group"><button class="btn btn-primary" type="submit">Submit</button></div>
+        </form>
+    </div>
+    
+    
+
+     <!-- SCRIPTS -->
+     <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+     <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+     <script src="{{url_for('static',filename='js/aos.js')}}"></script>
+     <script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+     <script src="{{url_for('static',filename='js/smoothscroll.js')}}"></script>
+     <script src="{{url_for('static',filename='js/custom.js')}}"></script>
+
+
+</body>
+</html>
